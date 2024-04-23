@@ -9,14 +9,13 @@
 
 /* Root And Variables */
 :root {
-  --color-body:#ffff;
+  --color-body: #ffff;
   --color-primary: #219f95;
-  --color-secondry:#bdedd4;
+  --color-secondry: #bdedd4;
   --color-badge: #afcedd;
   --color-text-dark: #234894;
   --color-text-light: #696969;
-  --color-heading:#0000;
-
+  --color-heading: #0000;
 
   --border-radius-sm: 5px;
   --border-radius-md: 8px;
@@ -80,7 +79,7 @@ ul {
   padding: 1.1rem 1rem;
   border-radius: 0.5rem;
   text-align: center;
-  margin: 1rem 0;
+  /* margin: 1rem 0; */
   white-space: nowrap;
   font-size: 1rem;
   background-color: var(--color-primary);
@@ -105,8 +104,8 @@ ul {
 }
 
 .request h2 {
-  font-size:1.5rem;
-  margin:1.5rem 1rem;
+  font-size: 1.5rem;
+  margin: 1.5rem 1rem;
 }
 .request__slides {
   display: grid;
@@ -128,26 +127,28 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-.request__detail{
+.request__detail {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
 }
- .request__number {
+.request__number {
   font-size: 0.8rem;
   color: var(--color-text-light);
-  
 }
-.request__detail p{
+.request__detail p {
   font-size: 1rem;
   color: var(--color-text-dark);
   padding-right: 1rem;
 }
+.request__title {
+  width: 100%;
+}
 .request__titles {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 .request__Specification {
   display: flex;
@@ -157,13 +158,13 @@ ul {
   margin-top: 1rem;
 }
 .request__Specification img {
-  width: 15%;
+  width: 20%;
   height: auto;
   object-fit: cover;
   border-radius: var(--border-radius-sm);
 }
-.request__Specification p{
-  font-size:0.9rem ;
+.request__Specification p {
+  font-size: 1rem;
   margin-right: 0.5rem;
 }
 @media screen and (min-width: 728px) {
@@ -181,10 +182,11 @@ ul {
     font-size: 1.7rem;
   }
   .request__Specification img {
-    width: 22%;
+    /* width: 22%; */
+    height: 40px;
   }
-  .request__Specification p{
-    font-size:1.1rem ;
+  .request__Specification p {
+    font-size: 1.1rem;
   }
   .badge {
     border-radius: 10px;
@@ -201,7 +203,7 @@ ul {
     font-size: 1.3rem;
   }
   .request h2 {
-    font-size: 2.4rem; 
+    font-size: 2.4rem;
   }
   .request__slides {
     grid-template-columns: repeat(3, 1fr);
@@ -210,10 +212,11 @@ ul {
     font-size: 1.8rem;
   }
   .request__Specification img {
-    width: 25%;
+    width: 30%;
+    height: 40px;
   }
-  .request__Specification p{
-    font-size:1.2rem ;
+  .request__Specification p {
+    font-size: 1.2rem;
   }
   .badge {
     border-radius: 10px;
