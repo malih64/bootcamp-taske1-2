@@ -1,0 +1,227 @@
+/* REST CSS */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Root And Variables */
+:root {
+  --color-body:#ffff;
+  --color-primary: #219f95;
+  --color-secondry:#bdedd4;
+  --color-badge: #afcedd;
+  --color-text-dark: #234894;
+  --color-text-light: #696969;
+  --color-heading:#0000;
+
+
+  --border-radius-sm: 5px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 20px;
+}
+body {
+  font-weight: 400;
+  background-color: var(--color-body);
+}
+body,
+* {
+  font-family: Vazir;
+}
+h1,
+h2,
+h3 {
+  font-weight: 700;
+  /* color: var(--color-heading); */
+}
+/* Typography Mobail First */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+ul {
+  list-style: none;
+}
+
+/* Typography Desktop */
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+}
+/* Buttons */
+.btn {
+  outline: 0;
+  border: 0px;
+  padding: 1.1rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin: 1rem 0;
+  white-space: nowrap;
+  font-size: 1rem;
+  background-color: var(--color-primary);
+  color: #ffff;
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  border-radius: var(--border-radius-md);
+  background-color: var(--color-badge);
+  color: var(--color-text);
+  padding: 0.1rem 0.6rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* block section */
+.continer {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.request h2 {
+  font-size:1.5rem;
+  margin:1.5rem 1rem;
+}
+.request__slides {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.request__slide {
+  background-color: var(--color-secondry);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 0.8rem;
+  padding: 1.5rem 1rem;
+}
+.request__slide > h2 {
+  font-size: 1.4rem;
+  margin: 0;
+}
+.request__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.request__detail{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+ .request__number {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  
+}
+.request__detail p{
+  font-size: 1rem;
+  color: var(--color-text-dark);
+  padding-right: 1rem;
+}
+.request__titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.request__Specification {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1rem;
+}
+.request__Specification img {
+  width: 15%;
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--border-radius-sm);
+}
+.request__Specification p{
+  font-size:0.9rem ;
+  margin-right: 0.5rem;
+}
+@media screen and (min-width: 728px) {
+  .btn {
+    padding: 1.4rem 1.2rem;
+    font-size: 1.2rem;
+  }
+  .request h2 {
+    font-size: 2rem;
+  }
+  .request__slides {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .request__slide > h2 {
+    font-size: 1.7rem;
+  }
+  .request__Specification img {
+    width: 22%;
+  }
+  .request__Specification p{
+    font-size:1.1rem ;
+  }
+  .badge {
+    border-radius: 10px;
+    padding: 0.2rem 0.8rem;
+    font-size: 1.4rem;
+  }
+  .request__number {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .btn {
+    padding: 1.6rem 1.4rem;
+    font-size: 1.3rem;
+  }
+  .request h2 {
+    font-size: 2.4rem; 
+  }
+  .request__slides {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .request__slide > h2 {
+    font-size: 1.8rem;
+  }
+  .request__Specification img {
+    width: 25%;
+  }
+  .request__Specification p{
+    font-size:1.2rem ;
+  }
+  .badge {
+    border-radius: 10px;
+    padding: 0.3rem 1rem;
+    font-size: 1.6rem;
+  }
+  .request__number {
+    font-size: 1.1rem;
+    color: var(--color-text-light);
+  }
+}
