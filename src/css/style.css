@@ -183,9 +183,6 @@ ul {
     font-size: 1.7rem;
   }
 
-  .request__Specification p {
-    font-size: 1.1rem;
-  }
 
 }
 @media screen and (min-width: 1024px) {
@@ -202,9 +199,4 @@ ul {
   .request__slide > h2 {
     font-size: 1.8rem;
   }
-
-  .request__Specification p {
-    font-size: 1.2rem;
-  }
-
 }
